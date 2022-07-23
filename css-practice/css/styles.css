@@ -1,8 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    
+   }
+
 footer {
     color: #ff00ff;
 }
 p {
-    color:aqua;
+    color:rgb(255, 255, 255);
+    background-color: black;
 }
 
 h1 {
@@ -16,6 +24,60 @@ article {
 }
 
 li {
-color: blue;
+color: rgba(255, 0, 0, 0.705);
 font-size: 30px;
+}
+
+/* Ниже идет работа с flex cotainer */
+
+
+
+.flex-container {  /* Общее свойство для flex-c. */
+    border: 5px solid #001e81;
+    flex-direction: column; /*как отображаются наши контейнеры, стандарт column */
+    flex-wrap: nowrap; 
+}
+
+.flex-item { /* Общее свойство для flex-item */
+    padding: 10px; /* Отступ */
+    font: italic 1.2em "Fira Sans", serif; /* Стиль шрифта, он теперь в боксах должен быть курсивым и красивым :) */
+    color: rgb(255, 255, 255); /* Цвет шрифта */
+    text-align: center; /* Расположение текста (по центру, справа, слева и т.д) */
+    text-shadow: 0 2px 0 #000;  /* Тень текста */
+    width: 200px;
+    /*Сделал основу для всех flex-item в целом, далее будут свойства для каждого отдельно */
+}
+
+.item-1 {
+    background-color: rgba(0, 238, 255, 0.733);
+}
+
+.item-2 {
+    background-color: rgb(17, 0, 255);
+}
+
+.item-3 {
+    background-color: rgb(255, 0, 0);
+}
+
+.item-4{
+    background-color: aquamarine;
+}
+
+.item-5 {
+    background-color: black;
+}
+
+.item-6 {
+    background-color: rgb(199, 0, 182);
+}
+
+.item-7 {
+background-color: rgb(136, 0, 247);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; /* перенос элементов */
 }
