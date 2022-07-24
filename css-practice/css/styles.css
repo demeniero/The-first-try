@@ -49,6 +49,8 @@ font-size: 30px;
 }
 
 .item-1 {
+    color: #000;
+    text-shadow: none;
     background-color: rgba(0, 238, 255, 0.733);
 }
 
@@ -78,6 +80,6 @@ background-color: rgb(136, 0, 247);
 
 .flex-container{
     display: flex;
-    flex-direction: row; 
+    flex-direction: row-reverse; 
     flex-wrap: wrap; /* перенос элементов */
 }
